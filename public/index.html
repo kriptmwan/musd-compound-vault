@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MUSD Compound Vault — Mezo Buildathon demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; } h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+  .row { display: flex; justify-content: space-between; padding: 0.25rem 0; }
+  input { width: 140px; padding: 0.4rem; } button { padding: 0.5rem 0.9rem; cursor: pointer; }
+  #status { white-space: pre-wrap; background: #f6f6f6; padding: 0.75rem; border-radius: 8px; min-height: 3rem; }
+  .muted { color: #666; font-size: 0.9rem; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.min.js"></script>
+</head>
+<body>
+<h1>MUSD Compound Vault</h1>
+<p class="muted">Auto-compounding ERC-4626 vault for MUSD on Mezo. Deposit MUSD, earn Mezo's
+MUSD Savings Rate (sMUSD) yield — compounded. Demo UI for the Mezo Buildathon (Wave 2).
+Testnet only. No real funds.</p>
+
+<div class="card">
+  <div class="row"><span>Network</span><b id="net">—</b></div>
+  <div class="row"><span>Wallet</span><b id="acct">—</b></div>
+  <div class="row"><span>Your MUSD</span><b id="musdBal">—</b></div>
+  <div class="row"><span>Your cMUSD shares</span><b id="shares">—</b></div>
+  <div class="row"><span>Your shares worth</span><b id="sharesValue">—</b></div>
+  <div class="row"><span>Vault total assets</span><b id="assets">—</b></div>
+  <div class="row"><span>Share price</span><b id="price">—</b></div>
+  <div class="row"><span>Idle buffer / invested</span><b id="split">—</b></div>
+  <div class="row"><span>sMUSD yield index</span><b id="yidx">—</b></div>
+  <p><button id="connect">Connect wallet</button> <button id="refresh">Refresh</button></p>
+</div>
+
+<div class="card">
+  <h2>Deposit MUSD</h2>
+  <input id="depAmt" type="number" min="0" step="any" placeholder="e.g. 100" />
+  <button id="deposit">Approve + deposit</button>
+  <h2>Withdraw MUSD</h2>
+  <input id="wdAmt" type="number" min="0" step="any" placeholder="e.g. 50" />
+  <button id="withdraw">Withdraw</button>
+  <h2>Compound yield</h2>
+  <p class="muted">Permissionless — claims the vault's accrued sMUSD yield and re-deposits it.</p>
+  <button id="compound">Compound now</button>
+</div>
+
+<div class="card"><h2>Status</h2><div id="status">Open with ?vault=0x… (deployed vault) on Mezo testnet (chain 31611).</div></div>
+
+<p class="muted">Vault:
+<a id="vaultLink" href="#" target="_blank" rel="noopener">—</a><br/>
+Get test MUSD/BTC: <a href="https://faucet.test.mezo.org" target="_blank" rel="noopener">faucet.test.mezo.org</a>
+· Explorer: <a href="https://explorer.test.mezo.org" target="_blank" rel="noopener">explorer.test.mezo.org</a></p>
+
+<script src="./app.js"></script>
+</body>
+</html>
