@@ -2,14 +2,14 @@
 
 Prepared 2026-11-15 from the live AKINDO page (deadline 15 Nov 2026 ~22:00 WIB,
 from the page countdown). Copy-paste into the AKINDO submission form; adjust
-team info before submitting. Video link still missing — record first.
+team info before submitting. Video READY (musd-compound-vault-pitch.mp4, 102s) — link above, expires 17 Nov 10:05 WIB; prefer YouTube unlisted for a permanent link.
 
 ## What you submit (package)
 
 - Live project (testnet): https://kriptmwan.github.io/musd-compound-vault/
 - Public GitHub repo: https://github.com/kriptmwan/musd-compound-vault
 - Deck: `DECK.md` in the repo
-- 2-minute pitch video: [ADD LINK AFTER UPLOAD — YouTube unlisted or Loom]
+- 2-minute pitch video: https://muse.ai/files/1407549895777481/2351841758988976/9jvoyf6ol15jyjcmxcqqc2rq/musd-compound-vault-pitch.mp4 (Muse file link — EXPIRES 17 Nov 2026 10:05 WIB; replace with a YouTube unlisted link if possible before submitting)
 
 ## Submission form
 
