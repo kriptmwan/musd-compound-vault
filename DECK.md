@@ -145,7 +145,7 @@ own open item more than one that hides it.*
 **Try it / read it**
 
 - Live demo (testnet): *[fill in after deploying `public/` — e.g. Vercel link]*
-- Vault on Mezo testnet explorer: *[fill in vault address after `npm run deploy:testnet`]*
+- Vault on Mezo testnet explorer: https://explorer.test.mezo.org/address/0x148D18B0D05D7ae097eBB5A3c48D4c5a7269b6e7 (vault `0x148D18B0D05D7ae097eBB5A3c48D4c5a7269b6e7`, 25 MUSD seeded, owner `0xabf1f5b738f847b5aff3709de5f98811f6147c1f`)
 - Public GitHub repo: *[fill in after push]*
 - Design + test report: `DESIGN.md` in the repo
 - AKINDO: https://app.akindo.io/wave-hacks/OVOO0gdrVU8379D10
