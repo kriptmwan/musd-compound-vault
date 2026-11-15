@@ -2,7 +2,8 @@
 // No build step: open index.html with ?vault=0x... and connect MetaMask.
 // Testnet only — never point this at mainnet with real funds.
 const params = new URLSearchParams(location.search);
-const VAULT_ADDRESS = params.get("vault") || "";
+// Live vault on Mezo testnet (deployed 2026-11-15, seeded 25 MUSD). ?vault= overrides.
+const VAULT_ADDRESS = params.get("vault") || "0x148D18B0D05D7ae097eBB5A3c48D4c5a7269b6e7";
 const MUSD_TESTNET = "0x118917a40FAF1CD7a13dB0Ef56C86De7973Ac503";
 const MEZO_TESTNET_CHAIN_ID = 31611;
 
