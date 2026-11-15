@@ -9,7 +9,7 @@ team info before submitting. Video READY on YouTube (unlisted, 102s) — link ab
 - Live project (testnet): https://kriptmwan.github.io/musd-compound-vault/
 - Public GitHub repo: https://github.com/kriptmwan/musd-compound-vault
 - Deck: `DECK.md` in the repo
-- 2-minute pitch video: https://youtu.be/yPLhQg8bv8o (YouTube, uploaded by user 2026-11-15 — permanent link)
+- 2-minute pitch video: https://youtu.be/8ZtUlw2EGRU (YouTube, uploaded by user 2026-11-15 — permanent link)
 
 ## Submission form
 
